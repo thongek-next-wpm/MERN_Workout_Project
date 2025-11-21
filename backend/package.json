@@ -13,6 +13,9 @@
   "type": "commonjs",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mogoose": "^0.0.1-security",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.20.1"
   }
 }
