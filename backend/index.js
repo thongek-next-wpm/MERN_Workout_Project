@@ -1,6 +1,6 @@
 const express = require("express"); // Import the Express library
 require("dotenv").config(); // Load environment variables from .env file
-const wokoutRoutes = require("./routers/workouts"); // Import workout routes
+const wokoutRoutes = require("./routers/Workout"); // Import workout routes
 const mongoose = require("mongoose"); // Import Mongoose for MongoDB interaction
 
 // Create an Express application
