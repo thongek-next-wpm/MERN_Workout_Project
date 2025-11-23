@@ -11,7 +11,6 @@ function App() {
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<h1>About Page</h1>} />
           </Routes>
         </div>
       </BrowserRouter>
