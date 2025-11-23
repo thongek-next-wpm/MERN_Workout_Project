@@ -1,7 +1,7 @@
 const WorkoutDetails = ({ workout }) => {
   return (
     <div className="workout-details">
-      <h2>{workout.title}</h2>
+      <h4>{workout.title}</h4>
       <p>
         <strong>Load (kg):</strong> {workout.load}
       </p>
