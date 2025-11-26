@@ -1,14 +1,14 @@
-const expess = require("express");
+const express = require("express");
 
-//import userController functions
-const { signinUser, signupUser } = require("../controllers/userController");
+// controller functions
+const { loginUser, signupUser } = require("../controllers/userController");
 
-const userRouter = expess.Router();
+const router = express.Router();
 
-// signin
-userRouter.post("/login", signinUser);
+// login route
+router.post("/login", loginUser);
 
-// signup
-userRouter.post("/signup", signupUser);
+// signup route
+router.post("/signup", signupUser);
 
-module.exports = userRouter;
+module.exports = router;
