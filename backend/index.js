@@ -2,6 +2,7 @@ const express = require("express"); // Import the Express library
 require("dotenv").config(); // Load environment variables from .env file
 const wokoutRoutes = require("./routers/Workout"); // Import workout routes
 const mongoose = require("mongoose"); // Import Mongoose for MongoDB interaction
+const userRouter = require("./routers/user"); // Import user routes
 
 // Create an Express application
 const app = express();
@@ -17,6 +18,9 @@ app.use((req, res, next) => {
 
 // Use workout routes for any requests to /api/workouts
 app.use("/api/workouts", wokoutRoutes);
+
+// Use user routes for any requests to /api/user
+app.use("/api/user", userRouter);
 
 // Connect to MongoDB using Mongoose
 mongoose
